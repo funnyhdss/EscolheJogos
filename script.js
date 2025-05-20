@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Dados enviados para o servidor:", dados);
         try {
             console.log("Buscando jogos...");
-            const response = await fetch("http://localhost:5000/caracteristica", {
+            const response = await fetch("https://projeto-ia-escolha-de-jogo-backend.vercel.app/caracteristica", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
