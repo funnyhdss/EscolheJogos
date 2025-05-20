@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolhe Jogos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="items-center justify-center min-h-screen font-sans py-8;">
+    <div class="container rounded-xl mx-auto max-w-[50%] bg-gray-400 text-center p-4">
+        <h1 class="text-3xl font-bold mb-6 text-gray-700">Buscador de jogos</h1>
+        <p class="text-gray-600 mb-4">&copy; Todos os direitos reservados  | Feito por: Heitor de Santana Schutz</p>
+
+        <div id="formulario" class="bg-white p-2 rounded-xl  shadow-md mb-6 border border-gray-200 max-w-xl mx-auto">
+            <h3 class="text-xl font-semibold mb-4 text-gray-700">insira as caracteristicas desejadas do jogo</h3>
+
+            <div id="generos" class="space-y-3 mb-4">
+                
+                <div class="caracteristica-row flex items-center space-x-2">
+                    <input type="text" class="ingredient ingredient-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe uma caracteristica">
+
+                    <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
+
+                </div>
+                 <div class="caracteristica-row flex items-center space-x-2">
+                    <input type="text" class="ingredient ingredient-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe uma caracteristica">
+
+                    <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
+                </div>  
+                 <div class="caracteristica-row flex items-center space-x-2">
+                    <input type="text" class="ingredient ingredient-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe uma caracteristica">
+
+                    <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
+                </div>
+                <button id="add-caracteristica-btn" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 transition duration-300 text-md">Adicionar caracteristica</button>
+
+                <button id="clear-caracteristicas-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 text-md">Limpar Campos</button>
+
+                <h3 class="text-xl font-semibold mb-4 text-gray-700 text-center">insira o valor médio do preço</h3>
+                <div class="flex justify-center items-center space-x-2 mb-4">
+                    <input type="number" class="preco preco-input p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 w-32" placeholder="R$">
+                </div>
+
+                <div class="buscar bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm" id="btn-BuscarJogos">Buscar</div>
+            </div>
+        </div>
+
+        <div id="response" class="response bg-white p-6 rounded-xl shadow-md border border-gray-200 mt-6 text-left hidden max-w-xl      mx-auto">
+            <!-- O conteúdo aqui será gerado pelo JavaScript -->
+            Carregando...
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
